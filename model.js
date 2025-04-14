@@ -1,10 +1,12 @@
+
+  // Global variable to store the classifier
 let classifier;
 
 // Label
 let label = 'listening...';
 
 // Teachable Machine model URL:
-let soundModel = 'https://teachablemachine.withgoogle.com/models/vDNbZ994M/';
+let soundModel = './';
 
 
 function preload() {
