@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #444;  /* Adjusted text color */
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.projectheader,
+.header {
+  background-color: #34495e;  /* Darker background for the header */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.projectheader h1,
+.header h1 {
+  font-size: 2.5rem;
+  color: #e74c3c;  /* Changed title color to a vibrant red */
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Main Content Styles */
+.main {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Centering the Introduction Section */
+.introduction {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.introduction h2 {
+  font-size: 1.8rem;
+  color: #2980b9;  /* Title color changed to blue */
+  margin-bottom: 10px;
+}
+
+.introduction p {
+  font-size: 1.1rem;
+  color: #555;  /* Adjusted text color to a softer gray */
+  max-width: 800px;  /* Max width to ensure it doesn’t stretch too wide */
+  margin: 0 auto;  /* Horizontal centering of text */
+}
+
+/* Centering the Reflection and Ethical Sections */
+.content {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contenttext h2 {
+  font-size: 1.8rem;
+  color: #2980b9;  /* Title color for sections changed to blue */
+  margin-bottom: 10px;
+}
+
+.contenttext p {
+  font-size: 1.1rem;
+  color: #555;  /* Adjusted text color */
+  max-width: 800px;  /* Max width to ensure it doesn’t stretch too wide */
+  margin: 0 auto;  /* Horizontal centering of text */
+}
+
+/* Centering Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;  /* Horizontally centers the image */
+  border-radius: 8px;
+}
+
+/* Centering the Button */
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  text-align: center;  /* Ensure the text inside the button is centered */
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #ddd;  /* Lighter footer text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .projectheader h1,
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    width: 180px;
+  }
+}

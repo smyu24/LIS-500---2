@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIS500 Project 3 - Cat and Dog Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    
+    <header class="projectheader">
+      <h1>LIS500 Project 3: Cat and Dog Image Classifier</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="machine.html">Our Model</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <main class="main">
+      <section class="introduction">
+        <h2>Introduction</h2>
+        <p>This project focuses on creating a browser-based image classifier to distinguish between cats and dogs using a Teachable Machine model. We trained this model using typical images of cats and dogs from online sources. The classifier works by granting camera access, allowing users to hold a sample of a cat or dog in front of the screen for real-time classification.</p>
+        <p>The app is built using the ml5.js library, which is a JavaScript library that facilitates machine learning in the browser. The model was trained on labeled data from Google's Teachable Machine, an easy-to-use platform for building machine learning models with no code required.</p>
+        <p>Through this project, we also explored the ethical implications of machine learning models, particularly through the lens of Joy Buolamwini's *Unmasking AI*. By building this model, we were not only learning about how machine learning functions, but also reflecting on the biases and limitations that these technologies may carry, especially when they fail to account for diversity and inclusivity.</p>
+        <iframe width="720" height="480" src="https://youtube.com/embed/Dk5YDQvtR_M?si=LSkaFppyp-kh5tm4"></iframe>
+      </section>
+      
+      
+      <img src="images/catdogmodel.png" height="400" width="600">
+
+      
+      <section class="content">
+        <div class="contenttext">
+          <h2>Reflections on Unmasking AI</h2>
+          <p>Joy Buolamwini's *Unmasking AI* presents a powerful critique of how AI systems often fail to be inclusive. One of the most striking examples she shares is how facial recognition systems struggled to recognize her as a Black woman until she wore a white mask. This made me reflect on how AI, while seemingly neutral, can be deeply biased due to who designs it and who is represented in the training data. As we developed this image classifier for cats and dogs, it became clear that AI models are only as good as the data they are trained on. Although our model is more benign, it still showcases the importance of considering diversity in AI systems.</p>
+        </div>
+      </section>
+
+      
+      <section class="content">
+        <div class="contenttext">
+          <h2>Ethical Implications</h2>
+          <p>Even for a seemingly harmless project like an image classifier for pets, we need to be cautious about how AI is implemented. For example, what if a similar system was used in a real-world scenario like monitoring animals in shelters or farms? If the classifier wasn’t trained on a wide variety of animal images, it could fail to identify certain breeds or conditions, leading to inaccuracies. The takeaway from Buolamwini’s work is that the responsibility lies with the developers of the AI systems to ensure fairness, transparency, and inclusivity. Our model may be a small, fun project, but it’s a reminder that all AI systems should be designed with a consciousness of who is being left out and how that could lead to harm.</p>
+        </div>
+      </section>
+
+      
+      <section class="content">
+        <div class="contenttext">
+          <h2>What Was Learned</h2>
+          <p>One of the most profound lessons from *Unmasking AI* is that AI systems often exclude certain groups of people, and these exclusions aren’t always visible. The models are built on datasets that may be incomplete or unrepresentative. When we built our classifier, we realized how easy it is to overlook how well it works for different images, angles, or lighting conditions. Buolamwini’s call for accountability and transparency in AI is something we took seriously while developing this project. While our model is simple and fun, we still wanted to be mindful of its limitations and communicate them clearly to users. We’re now more aware of how AI systems can impact people's lives and the importance of designing technology with empathy and foresight.</p>
+        </div>
+      </section>
+
+      <button class="button"><a href="https://thecodingtrain.com/tracks/teachable-machine/teachable-machine/3-sound-classification">Learn More</a></button>
+
+    </main>
+
+    
+    <footer class="footer">
+      <p>&copy; 2025 Dui Cao\ Seung-Min Yu. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>
