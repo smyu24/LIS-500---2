@@ -6,12 +6,11 @@ let classifier;
 let label = 'listening...';
 
 // Teachable Machine model URL:
-let soundModel = './';
 
 
 function preload() {
   // Load the model
-  classifier = ml5.soundClassifier(soundModel + 'model.json');
+  classifier = ml5.soundClassifier('./model.json');
 }
 
 function setup() {
