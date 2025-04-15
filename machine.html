@@ -38,7 +38,7 @@
       <h2>How It Works</h2>
       <p>
         We used <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> by Google to train a sound classifier.
-        It listens to ~30-second audio clips and compares them to the trained patterns based on pitch, rhythm, and tone.
+        It listens to ~5-second audio clips and compares them to the trained patterns based on pitch, rhythm, and tone.
       </p>
       <p>
         The model was trained with several common accents (total of 8 male & female), and it updates predictions live as you speak.
@@ -46,31 +46,35 @@
     </section>
 
     <section class="content">
-      <h2>Project Goals</h2>
-      <ul class="contenttext">
-        <li>Showcase how machine learning can interpret spontaneous human speech patterns.</li>
-        <li>Explore emotional nuance in voice and sound.</li>
-        <li>Utilize accessible tools like Teachable Machine and p5.js.</li>
-        <li>Build a fun, interactive web-based demo.</li>
-      </ul>
-    <br>
-      <h2>Challenges & Learnings</h2>
-      <p>
-        Interjections are often subtle and vary based on tone and emotion. This made classification tricky—"hmm" could be thoughtful or confused depending on how it’s said.
-      </p>
-      <p>
-        We learned that real-world audio is messy, and creating a responsive model requires a diverse dataset with clear labeling and consistency across voice types.
-      </p>
-    </section>
+  <h2>Project Goals</h2>
+  <ul class="contenttext">
+    <li>Build a voice classifier using Teachable Machine to identify simple spoken words.</li>
+    <li>Test model accuracy across speakers with varied accents and voice pitches.</li>
+    <li>Critically examine the ethical stakes of accent bias in machine learning systems.</li>
+    <li>Engage with ideas from Joy Buolamwini’s <em>Unmasking AI</em> to inform design reflections.</li>
+  </ul>
+  <br>
+  <h2>Challenges & Learnings</h2>
+  <p>
+    Accent bias in voice models often leads to misclassification, not due to mispronunciation, but because of deviations from the “standard” accent used during training. Participants speaking with Korean, Indian, or Spanish accents were frequently misidentified or not recognized at all.
+  </p>
+  <p>
+    This revealed that models don't truly “listen”—they pattern-match against a narrow dataset. The model, trained on a subset of voices, struggled with others, especially when pitch, intonation, or rhythm varied. This isn’t just technical—it’s cultural. It shows how AI can replicate exclusion if it isn’t designed with diversity in mind.
+  </p>
+  <p>
+    Buolamwini’s concept of the “coded gaze” reminded me that building a classifier is an act of power. The biases in our data reflect who is seen—and who is ignored—by technology.
+  </p>
+</section>
 
-    <section class="content">
-      <h2>Next Steps</h2>
-      <ul class="contenttext">
-        <li>Train with more interjection types and real-world background noise.</li>
-        <li>Add support for multilingual interjections.</li>
-        <li>Combine with emotion recognition models to provide context.</li>
-        <li>Test use cases in education, accessibility, and human-computer interaction.</li>
-      </ul>
+<section class="content">
+  <h2>Next Steps</h2>
+  <ul class="contenttext">
+    <li>Expand the dataset with a broader range of voices, accents, and pitches.</li>
+    <li>Integrate background noise and real-world conditions into training environments.</li>
+    <li>Explore multilingual input and dialect-sensitive classification approaches.</li>
+    <li>Frame the project as an interactive critique of AI bias in public exhibitions or educational settings.</li>
+    <li>Continue reflecting on ethical AI design, centering inclusion over efficiency.</li>
+  </ul>
 
       <div class="contenttext">
           <h2>Explore the Code</h2>
@@ -85,8 +89,8 @@
     <section class="introduction">
       <h2>Try It Out!</h2>
       <p>
-        Research by Prof. Weinberger states the following to be a way to reveal accents: Please call Stella.  Ask her to bring these things with her from the store:  Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.  We also need a small plastic snake and a big toy frog for the kids.  She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
-        Our classifier will attempt to recognize it instantly.
+        Research by Prof. Weinberger states the following to be a way to reveal accents: <u>Please call Stella.  Ask her to bring these things with her from the store:  Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.  We also need a small plastic snake and a big toy frog for the kids.  She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
+        Our classifier will attempt to recognize it instantly.</u>
       </p>
       <script src="model.js"></script>
     </section>
