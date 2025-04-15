@@ -32,26 +32,18 @@
     <section class="introduction">
       <h2>Welcome to Our Project</h2>
       <p>
-        This project focuses on detecting <strong>Accents + Gender</strong> of users in real time using a sound classifier. Creating this model has been an interesting ethical dillema, and it was especially rewarding to see the accuracy post model tuning
+        This project focuses on detecting <strong>Accents + Gender</strong> of users in real time using a sound classifier. Creating this model has been an interesting ethical dilemma, and it was especially rewarding to see the accuracy post model tuning
       </p>
-    </section>
-
-    <section class="introduction">
-      <h2>Try It Out!</h2>
-      <p>
-        Speak an interjection into your microphone (e.g., “wow,” “hmm,” “yay”) and our classifier will attempt to recognize it instantly.
-      </p>
-      <script src="model.js"></script>
     </section>
 
     <section class="content">
       <h2>How It Works</h2>
       <p>
         We used <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> by Google to train a sound classifier.
-        It listens to 1-second audio clips and compares them to the known patterns of interjections, based on pitch, rhythm, and tone.
+        It listens to ~30-second audio clips and compares them to the trained patterns based on pitch, rhythm, and tone.
       </p>
       <p>
-        The model was trained with several common interjections, and it updates predictions live as you speak.
+        The model was trained with several common accents (total of 8 male & female), and it updates predictions live as you speak.
       </p>
     </section>
 
@@ -63,9 +55,6 @@
         <li>Utilize accessible tools like Teachable Machine and p5.js.</li>
         <li>Build a fun, interactive web-based demo.</li>
       </ul>
-    </section>
-
-    <section class="content">
       <h2>Challenges & Learnings</h2>
       <p>
         Interjections are often subtle and vary based on tone and emotion. This made classification tricky—"hmm" could be thoughtful or confused depending on how it’s said.
@@ -86,15 +75,22 @@
     </section>
 
     <section class="content">
-      <h2>Resources & Code</h2>
-      <p>
-        View our code on GitHub: <a href="https://github.com/YOUR_USERNAME/interjection-classifier" target="_blank">Interjection Classifier Repo</a>.
-      </p>
-      <p>
-        Inspired by: <a href="https://thecodingtrain.com/tracks/teachable-machine/teachable-machine/3-sound-classification" target="_blank">The Coding Train’s Sound Classifier Guide</a>.
-      </p>
-    </section>
+        <div class="contenttext">
+          <h2>Explore the Code</h2>
+          <p>
+            View the source code and dataset information on our GitHub repository: <a href="https://github.com/YOUR_USERNAME/your-repo-name" target="_blank">GitHub Repository</a>
+          </p>
+        </div>
+      </section>
 
+
+    <section class="introduction">
+      <h2>Try It Out!</h2>
+      <p>
+        Speak an interjection into your microphone (e.g., “wow,” “hmm,” “yay”) and our classifier will attempt to recognize it instantly.
+      </p>
+      <script src="model.js"></script>
+    </section>
   </main>
 
 </body>
