@@ -4,44 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Interjection Classifier</title>
+  <title>Ethnicity & Gender Classifier</title>
   <link rel="stylesheet" href="style.css" />
-  
- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
-  
   <script src="https://unpkg.com/ml5@0.4.2/dist/ml5.min.js"></script>
-  
 </head>
 <body>
-<header class="header">
-      <h1>Interjection Machine</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="machine.html">Our Machine</a></li>
-        </ul>
-      </nav>
-</header>
+  <header class="header">
+    <h1>Ethnicity & Gender Classifier</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="machine.html">Our Machine</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="main">
     <section class="introduction">
-      <h2>Try showing your cats and dogs in front of camera!</h2>
-      <p>This model recognize the objects in front of camera into  <strong>dogs</strong>, <strong>cats</strong>. Try showing your pets.</p>
+      <h2>Try saying common interjections aloud!</h2>
+      <p>This project classifies the speaker's voice by <strong>perceived gender</strong> and <strong>ethnicity</strong> based on audio input. Say words like "hello," "yes," or "no," and see how the model responds. This experiment is meant to provoke critical reflection—not to create a production-grade classifier.</p>
       <script src="model.js"></script>
     </section>
 
-
     <section class="introduction">
-      <p>We use google supportive teachable machine <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> to train and creat our model </p>
+      <h2>Model Details</h2>
+      <p>We used Google's <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> to build this model, collecting audio samples from volunteers with different ethnic backgrounds and gender identities. Our aim was to see how machine learning categorizes voices and what patterns emerge. We observed noticeable variances in how well the model responded to certain groups—often struggling with less represented voices. This reflects real-world voice recognition biases, which Joy Buolamwini critiques in her book <em>Unmasking AI</em>.</p>
     </section>
 
+    <section class="introduction">
+      <h2>Limitations & Ethical Considerations</h2>
+      <p>This model is not meant to be definitive. In fact, its inaccuracies are part of the point. AI models trained on audio data often encode biases present in their datasets. For example, commercial voice assistants have historically performed worse with non-white, non-male voices. Our project is both technical and critical—it demonstrates a system and critiques its implications. We must ask: who is this working for, and who is left out?</p>
+    </section>
+
+    <section class="introduction">
+      <h2>Next Steps</h2>
+      <p>We plan to continue experimenting with voice input diversity, re-training our model using broader datasets. We are also considering adding confidence scores and a disclaimer panel, encouraging users to reflect on their classification and whether it felt accurate or alienating. Ultimately, this is an educational and activist project. It asks users to question what it means for a machine to label something so deeply tied to identity.</p>
+    </section>
   </main>
 
   <footer class="footer">
-      <p>&copy; 2025 Dui Cao\ Seung-Min Yu. All rights reserved.</p>
+    <p>&copy; 2025 Dui Cao & Seung-Min Yu. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
