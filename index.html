@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LIS500 Project 3 - Cat and Dog Image Classifier</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    
-    
-    <header class="projectheader">
-      <h1>LIS500 Project 3: Cat and Dog Image Classifier</h1>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="machine.html">Our Model</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Voice 2.0 – Accent, Gender & Ethnicity Bias Classifier</title>
+  
+</head>
+<body>
+  <header>
+    <h1>Invisible Voice 2.0</h1>
+    <p>A Teachable Machine Experiment on Gender & Ethnic Bias in Voice Recognition</p>
+  </header>
 
-    
-    <main class="main">
-      <section class="introduction">
-        <h2>Introduction</h2>
-        <p>This project focuses on creating a browser-based image classifier to distinguish between cats and dogs using a Teachable Machine model. We trained this model using typical images of cats and dogs from online sources. The classifier works by granting camera access, allowing users to hold a sample of a cat or dog in front of the screen for real-time classification.</p>
-        <p>The app is built using the ml5.js library, which is a JavaScript library that facilitates machine learning in the browser. The model was trained on labeled data from Google's Teachable Machine, an easy-to-use platform for building machine learning models with no code required.</p>
-        <p>Through this project, we also explored the ethical implications of machine learning models, particularly through the lens of Joy Buolamwini's *Unmasking AI*. By building this model, we were not only learning about how machine learning functions, but also reflecting on the biases and limitations that these technologies may carry, especially when they fail to account for diversity and inclusivity.</p>
-        <iframe width="720" height="480" src="https://youtube.com/embed/Dk5YDQvtR_M?si=LSkaFppyp-kh5tm4"></iframe>
-      </section>
-      
-      
-      <img src="images/catdogmodel.png" height="400" width="600">
+  <div class="content">
+    <div class="highlight">
+      <strong>Try it out:</strong> Speak phrases into your mic and see how the model classifies your voice in terms of perceived gender or ethnicity.
+    </div>
 
-      
-      <section class="content">
-        <div class="contenttext">
-          <h2>Reflections on Unmasking AI</h2>
-          <p>Joy Buolamwini's *Unmasking AI* presents a powerful critique of how AI systems often fail to be inclusive. One of the most striking examples she shares is how facial recognition systems struggled to recognize her as a Black woman until she wore a white mask. This made me reflect on how AI, while seemingly neutral, can be deeply biased due to who designs it and who is represented in the training data. As we developed this image classifier for cats and dogs, it became clear that AI models are only as good as the data they are trained on. Although our model is more benign, it still showcases the importance of considering diversity in AI systems.</p>
-        </div>
-      </section>
+    <iframe src="https://teachablemachine.withgoogle.com/models/YOUR_MODEL_URL/" allow="microphone; camera"></iframe>
 
-      
-      <section class="content">
-        <div class="contenttext">
-          <h2>Ethical Implications</h2>
-          <p>Even for a seemingly harmless project like an image classifier for pets, we need to be cautious about how AI is implemented. For example, what if a similar system was used in a real-world scenario like monitoring animals in shelters or farms? If the classifier wasn’t trained on a wide variety of animal images, it could fail to identify certain breeds or conditions, leading to inaccuracies. The takeaway from Buolamwini’s work is that the responsibility lies with the developers of the AI systems to ensure fairness, transparency, and inclusivity. Our model may be a small, fun project, but it’s a reminder that all AI systems should be designed with a consciousness of who is being left out and how that could lead to harm.</p>
-        </div>
-      </section>
+    <h2>Project Statement: About Invisible Voice 2.0</h2>
+    <p>
+      Invisible Voice 2.0 is a critical AI and media literacy project exploring how machine learning models classify perceived gender and ethnicity from vocal audio input. Inspired by Joy Buolamwini’s groundbreaking book <em>Unmasking AI</em>, our team wanted to test the boundaries of fairness and inclusivity in systems that interpret human voice.
+    </p>
+    <p>
+      Using <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> by Google, we trained an audio classification model to categorize voices into broad gender and ethnic categories: for example, "Male - Indian", "Female - American", or "Unknown". Our dataset included recordings from friends, classmates, and public datasets that aimed to reflect a range of accents, tones, and speaking styles. The goal was not to reinforce stereotypes, but rather to critically examine whether machine learning models can (or should) attempt to infer identity from sound alone.
+    </p>
 
-      
-      <section class="content">
-        <div class="contenttext">
-          <h2>What Was Learned</h2>
-          <p>One of the most profound lessons from *Unmasking AI* is that AI systems often exclude certain groups of people, and these exclusions aren’t always visible. The models are built on datasets that may be incomplete or unrepresentative. When we built our classifier, we realized how easy it is to overlook how well it works for different images, angles, or lighting conditions. Buolamwini’s call for accountability and transparency in AI is something we took seriously while developing this project. While our model is simple and fun, we still wanted to be mindful of its limitations and communicate them clearly to users. We’re now more aware of how AI systems can impact people's lives and the importance of designing technology with empathy and foresight.</p>
-        </div>
-      </section>
+    <h2>Reflections from <em>Unmasking AI</em></h2>
+    <h3>Dui's Reflection</h3>
+    <p>
+      One of the key lessons I drew from Buolamwini’s work is her emphasis on the "coded gaze"—the idea that algorithms reflect the worldview and biases of those who build them. As I trained our model, I realized that even the decision of which categories to include is a subjective one. By framing voices through the lens of gender and ethnicity, we are imposing a system that may not reflect how individuals self-identify. This discomfort is productive: it reveals how flawed data collection and labeling processes can perpetuate misrepresentation.
+    </p>
+    <p>
+      Reading <em>Unmasking AI</em> encouraged me to think deeply about data ethics. Who gets to define the labels? Who gets represented in the training set? Our model struggled to correctly classify more ambiguous or non-binary voices. This isn't just a technical limitation—it's a political one. The lack of flexibility in classification reflects broader systemic exclusion in AI systems.
+    </p>
 
-      <button class="button"><a href="https://thecodingtrain.com/tracks/teachable-machine/teachable-machine/3-sound-classification">Learn More</a></button>
+    <h3>Seung's Reflection</h3>
+    <p>
+      While building our classifier, I felt a constant tension between the simplicity of machine learning tools and the complexity of human identity. <em>Unmasking AI</em> made me realize that technology’s default mode is often exclusionary, not inclusive. For example, our model often labeled my voice as "Male - American" even though I speak English with a Korean accent. This misclassification highlighted not only the model's limitations but also the assumptions baked into how it was trained.
+    </p>
+    <p>
+      Joy Buolamwini’s insistence on algorithmic accountability reminded me that we, as student developers, carry responsibility. It is not enough for the model to function—it must be transparent, fair, and inclusive. This project showed me that diversity in the training data is necessary but not sufficient. Inclusion must be a design value from the start.
+    </p>
 
-    </main>
+    <h2>What We Learned</h2>
+    <p>
+      We learned that algorithmic identity recognition is fraught with risk. While it might be technically possible to make guesses about gender and ethnicity from voice, the ethical implications are enormous. These classifications can reinforce stereotypes, make harmful assumptions, and exclude individuals who don’t conform to dominant norms. We also saw firsthand how models often fail with voices that are soft-spoken, accented, or don’t match the data majority.
+    </p>
+    <p>
+      Our biggest takeaway is this: algorithmic design is not neutral. Every decision—how data is labeled, who is included, what categories exist—has moral weight. Reading Buolamwini’s work gave us a framework to analyze these issues critically and to treat machine learning not as a purely technical pursuit, but as a social and ethical one.
+    </p>
 
-    
-    <footer class="footer">
-      <p>&copy; 2025 Dui Cao\ Seung-Min Yu. All rights reserved.</p>
-    </footer>
+    <h2>Explore the Code</h2>
+    <p>
+      View the source code and data documentation on our GitHub repository: <a href="https://github.com/YOUR_USERNAME/your-repo-name" target="_blank">GitHub Repository</a>
+    </p>
 
-  </body>
+    <h2>Video Demo</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+
+    <h2>Project Team</h2>
+    <ul>
+      <li>Dui Cao</li>
+      <li>Seung-Min Yu</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Invisible Voice 2.0 – Created in critical response to <em>Unmasking AI</em> by Joy Buolamwini.</p>
+  </footer>
+
+  <script>
+    console.log("Voice bias classifier loaded. Speak into the mic to test.");
+  </script>
+</body>
 </html>
