@@ -13,6 +13,10 @@ let modelURL = 'https://teachablemachine.withgoogle.com/models/MjeC-iVT9/';
 
 // STEP 1: Load the model!
 function preload() {
+  let options = {
+    probabilityThreshold: 0.6, // optional, can be tuned
+    overlapFactor: 0.0         // <-- try 0.5 or something else
+  };
   classifier = ml5.soundClassifier(modelURL + 'model.json');
 }
 
