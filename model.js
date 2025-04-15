@@ -1,42 +1,64 @@
+// Teachable Machine
+// The Coding Train / Daniel Shiffman
+// https://thecodingtrain.com/TeachableMachine/3-teachable-audio
+// https://editor.p5js.org/codingtrain/sketches/e3nrNMG7A
 
-  // Global variable to store the classifier
+
+// Storing the label
+let label = "waiting...";
+
+// Classifier and model url
 let classifier;
+let modelURL = 'https://teachablemachine.withgoogle.com/models/ExGAAGAal/';
 
-// Label
-let label = 'listening...';
-
-// Teachable Machine model URL:
-
-
+// STEP 1: Load the model!
 function preload() {
-  // Load the model
-  classifier = ml5.soundClassifier('./model.json');
+  classifier = ml5.soundClassifier(modelURL + 'model.json');
 }
 
 function setup() {
-  createCanvas(320, 240);
-  // Start classifying
-  // The sound model will continuously listen to the microphone
-  classifier.classify(gotResult);
+  createCanvas(640, 520);
+
+  // STEP 2: Start classifying (will listen to mic by default)
+  classifyAudio();
+}
+
+// STEP 2 classify!
+function classifyAudio() {
+  classifier.classify(gotResults);
 }
 
 function draw() {
   background(0);
-  // Draw the label in the canvas
-  fill(255);
-  textSize(32);
+
+  // STEP 4: Draw the label
+  // textSize(32);
   textAlign(CENTER, CENTER);
-  text(label, width / 2, height / 2);
+  // fill(255);
+  // text(label, width/2, height - 16);
+
+  // Background noise is headphones
+  let emoji = "🎧";
+  // Pick an emoji based on label
+  if (label == "Train") {
+    emoji = "🚂";
+  } else if (label == "Bell") {
+    emoji = "🛎";
+  } else if (label == "Ukulele") {
+    emoji = "🎸";
+  }
+
+  // Draw the emoji
+  textSize(256);
+  text(emoji, width / 2, height / 2);
 }
 
-
-// The model recognizing a sound will trigger this event
-function gotResult(error, results) {
+// STEP 3: Get the classification!
+function gotResults(error, results) {
   if (error) {
     console.error(error);
     return;
   }
-  // The results are in an array ordered by confidence.
-  // console.log(results[0]);
+  // Store the label
   label = results[0].label;
 }
