@@ -9,11 +9,11 @@ let label = "waiting...";
 
 // Classifier and model url
 let classifier;
-let modelURL = 'https://teachablemachine.withgoogle.com/models/ExGAAGAal/';
+// let modelURL = 'https://teachablemachine.withgoogle.com/models/ExGAAGAal/';
 
 // STEP 1: Load the model!
 function preload() {
-  classifier = ml5.soundClassifier(modelURL + 'model.json');
+  classifier = ml5.soundClassifier('./model.json');
 }
 
 function setup() {
