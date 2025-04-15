@@ -17,7 +17,7 @@
 
   <!-- Header/Navbar -->
   <header class="header">
-    <h1>Interjection Machine</h1>
+    <h1>Interjection Classifier</h1>
     <nav>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
@@ -30,14 +30,70 @@
   <main class="main">
 
     <section class="introduction">
-      <h2>Test Our Pet Classifier</h2>
-      <p>Try showing your <strong>cats</strong> or <strong>dogs</strong> in front of the camera! This machine will classify them in real-time.</p>
-      <script src="model.js"></script>
+      <h2>Welcome to Our Project</h2>
+      <p>
+        This project focuses on detecting <strong>interjections</strong>—expressions like “wow,” “ugh,” “huh,” or “yay”—in real time using a sound classifier.
+        These quick vocal bursts often carry emotion and intention, making them uniquely interesting for machine learning.
+      </p>
     </section>
 
     <section class="introduction">
+      <h2>Try It Out!</h2>
+      <p>
+        Speak an interjection into your microphone (e.g., “wow,” “hmm,” “yay”) and our classifier will attempt to recognize it instantly.
+      </p>
+      <script src="model.js"></script>
+    </section>
+
+    <section class="content">
       <h2>How It Works</h2>
-      <p>We built this model using Google’s <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a>. It learns from images of cats and dogs to make predictions directly from your webcam input.</p>
+      <p>
+        We used <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> by Google to train a sound classifier.
+        It listens to 1-second audio clips and compares them to the known patterns of interjections, based on pitch, rhythm, and tone.
+      </p>
+      <p>
+        The model was trained with several common interjections, and it updates predictions live as you speak.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Project Goals</h2>
+      <ul class="contenttext">
+        <li>Showcase how machine learning can interpret spontaneous human speech patterns.</li>
+        <li>Explore emotional nuance in voice and sound.</li>
+        <li>Utilize accessible tools like Teachable Machine and p5.js.</li>
+        <li>Build a fun, interactive web-based demo.</li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Challenges & Learnings</h2>
+      <p>
+        Interjections are often subtle and vary based on tone and emotion. This made classification tricky—"hmm" could be thoughtful or confused depending on how it’s said.
+      </p>
+      <p>
+        We learned that real-world audio is messy, and creating a responsive model requires a diverse dataset with clear labeling and consistency across voice types.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Next Steps</h2>
+      <ul class="contenttext">
+        <li>Train with more interjection types and real-world background noise.</li>
+        <li>Add support for multilingual interjections.</li>
+        <li>Combine with emotion recognition models to provide context.</li>
+        <li>Test use cases in education, accessibility, and human-computer interaction.</li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <h2>Resources & Code</h2>
+      <p>
+        View our code on GitHub: <a href="https://github.com/YOUR_USERNAME/interjection-classifier" target="_blank">Interjection Classifier Repo</a>.
+      </p>
+      <p>
+        Inspired by: <a href="https://thecodingtrain.com/tracks/teachable-machine/teachable-machine/3-sound-classification" target="_blank">The Coding Train’s Sound Classifier Guide</a>.
+      </p>
     </section>
 
   </main>
