@@ -40,12 +40,22 @@ function draw() {
   // Background noise is headphones
   let emoji = "🎧";
   // Pick an emoji based on label
-  if (label == "Train") {
+  if (label == "English Male") {
     emoji = "🚂";
-  } else if (label == "Bell") {
+  } else if (label == "English Female") {
     emoji = "🛎";
-  } else if (label == "Ukulele") {
-    emoji = "🎸";
+  } else if (label == "Cantonese Male") {
+    emoji = "🛎";
+  } else if (label == "Cantonese Female") {
+    emoji = "🛎";
+  } else if (label == "Indian Male") {
+    emoji = "🛎";
+  } else if (label == "Indian Female") {
+    emoji = "🛎";
+  } else if (label == "French Male") {
+    emoji = "🛎";
+  } else if (label == "French Female") {
+    emoji = "🛎";
   }
 
   // Draw the emoji
