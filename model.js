@@ -41,21 +41,21 @@ function draw() {
   let emoji = "🎧";
   // Pick an emoji based on label
   if (label == "English Male") {
-    emoji = "🚂";
+    emoji = "🇬🇧♀️";
   } else if (label == "English Female") {
-    emoji = "🛎";
+    emoji = "🇬🇧♂️";
   } else if (label == "Cantonese Male") {
-    emoji = "🛎";
+    emoji = "🇨🇳♀️";
   } else if (label == "Cantonese Female") {
-    emoji = "🛎";
+    emoji = "🇨🇳♂️";
   } else if (label == "Indian Male") {
-    emoji = "🛎";
+    emoji = "🇮🇳♀️";
   } else if (label == "Indian Female") {
-    emoji = "🛎";
+    emoji = "🇮🇳♂️";
   } else if (label == "French Male") {
-    emoji = "🛎";
+    emoji = "🇫🇷♀️";
   } else if (label == "French Female") {
-    emoji = "🛎";
+    emoji = "🇫🇷♂️";
   }
 
   // Draw the emoji
