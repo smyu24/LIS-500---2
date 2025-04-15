@@ -9,11 +9,11 @@ let label = "waiting...";
 
 // Classifier and model url
 let classifier;
-// let modelURL = 'https://teachablemachine.withgoogle.com/models/ExGAAGAal/';
+let modelURL = 'https://teachablemachine.withgoogle.com/models/MjeC-iVT9/';
 
 // STEP 1: Load the model!
 function preload() {
-  classifier = ml5.soundClassifier('./model.json');
+  classifier = ml5.soundClassifier(modelURL + 'model.json');
 }
 
 function setup() {
@@ -41,25 +41,25 @@ function draw() {
   let emoji = "🎧";
   // Pick an emoji based on label
   if (label == "English Male") {
-    emoji = "🇬🇧♀️";
+    emoji = "🇬🇧🚹";
   } else if (label == "English Female") {
-    emoji = "🇬🇧♂️";
+    emoji = "🇬🇧🚺";
   } else if (label == "Cantonese Male") {
-    emoji = "🇨🇳♀️";
+    emoji = "🇨🇳🚹";
   } else if (label == "Cantonese Female") {
-    emoji = "🇨🇳♂️";
+    emoji = "🇨🇳🚺";
   } else if (label == "Indian Male") {
-    emoji = "🇮🇳♀️";
+    emoji = "🇮🇳🚹";
   } else if (label == "Indian Female") {
-    emoji = "🇮🇳♂️";
+    emoji = "🇮🇳🚺";
   } else if (label == "French Male") {
-    emoji = "🇫🇷♀️";
+    emoji = "🇫🇷🚹";
   } else if (label == "French Female") {
-    emoji = "🇫🇷♂️";
+    emoji = "🇫🇷🚺";
   }
 
   // Draw the emoji
-  textSize(256);
+  textSize(200);
   text(emoji, width / 2, height / 2);
 }
 
@@ -69,6 +69,8 @@ function gotResults(error, results) {
     console.error(error);
     return;
   }
+   console.log(label); // Output: Hello, world!
+
   // Store the label
   label = results[0].label;
 }
