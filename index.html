@@ -49,37 +49,38 @@
             Working on this project was eye-opening in more ways than I expected. The project began as a fun exploration of training a voice classifier to recognize words like “hello,” “yes,” and “no.” But the deeper I got into testing, especially with non-native English speakers, the more it revealed the unsettling reality: even clear, correct speech could be consistently misunderstood by AI. And often, that misunderstanding came down to one thing - accent.
           </p>
           <p>
-            The initial spark came from a TikTok trend where users had to pronounce words to guide a ball through a virtual hoop. I noticed that many East Asian creators - despite articulating the words correctly - were repeatedly failing the game. Their slight variations in tone, pitch, or rhythm led to misclassifications. At first glance, it looked like just another viral challenge. But it hinted at something deeper: a systemic pattern of exclusion. This casual frustration inspired <em>Invisible Voice 2.0</em>, which turned the idea into a structured critique of how accent bias can render certain voices functionally invisible to technology.
+            The initial spark came from a TikTok trend where users had to pronounce words to guide a ball through a virtual hoop. I noticed that many Eastern creators - despite articulating the words correctly - were repeatedly failing the game. Their slight variations in tone, pitch, or rhythm led to misclassifications. At first glance, it looked like just another viral challenge. But it hinted at something deeper: a systemic pattern of exclusion. This casual frustration inspired me to take up this project, which explored the idea of how difficult of a concept accent bias rectification is and its implications.
           </p>
           <p>
-            Joy Buolamwini’s <em>Unmasking AI</em> hit especially hard during this process. Her concept of the “coded gaze” - the idea that AI reflects the worldview of its creators - was no longer just theoretical. I saw it in action. The model, trained mostly on my voice, failed to recognize the voices of my Korean, Mandarin, and Spanish-speaking friends. Despite speaking the same words, their intonation or pitch would throw off the classifier. It didn’t “hear” them. And in that failure, it rendered them invisible.
+            Joy Buolamwini’s <em>Unmasking AI</em> hit especially hard during this process. Her concept of the “coded gaze” - the idea that AI reflects the worldview of its creators - was no longer just theoretical. I saw it in action. Our model, trained on a subset of accents, occasionally failed to recognize the voices of my Korean, Mandarin, and Spanish speaking friends. Despite speaking the same words, their intonation or pitch would throw off the classifier. It didn’t “hear” them. And in that failure, it rendered them invisible.
           </p>
           <p>
-            The image Buolamwini shares - having to wear a white mask to be recognized by a facial recognition system - stuck with me as I watched my friends repeat simple words, again and again, only to be misclassified or ignored. There was no "accent mask" they could put on to make the model listen. That failure wasn’t a fluke; it was a reflection of the model’s blind spots - and mine. I realized that AI doesn’t just exclude by accident. It excludes by design, when diversity isn’t built into the training process.
+            The image Buolamwini shares - having to wear a white mask to be recognized by a facial recognition system - stuck with me as I watched my friends repeat simple words, again and again, only to be misclassified or ignored. There was no "accent mask" they could put on to make the model listen. That failure wasn’t a fluke; it was a reflection of the model’s blind spots - and mine. I realized that AI doesn’t just exclude by accident. It excludes by design when diversity isn’t built into the training process.
           </p>
           <p>
-            This experience forced me to confront how easily bias sneaks into our systems - not because of malicious intent, but because of the assumptions we don’t question. I used my voice to train the classifier, thinking it was a neutral starting point. But it wasn’t. It was just one voice, with one accent, representing one version of English. Everyone else became an outlier.
+            This experience forced me to confront how easily bias sneaks into our systems - not because of malicious intent but because of the assumptions we don’t question. I used English speakers/accents to train the classifier, thinking it was a neutral starting point. But it wasn’t. It was just one voice, with one accent, representing one version of English. Everyone else became an outlier.
           </p>
           <p>
-            As an aspiring technologist, this was humbling. <em>Unmasking AI</em> taught me that fairness isn’t a checkbox - it’s a responsibility. Inclusion has to be intentional. I don’t want to build systems that only understand people who sound like me. I want to build systems that listen to everyone. This project - and Buolamwini’s work - taught me that ethical AI begins not with code, but with care. With listening. With seeing who’s left out, and choosing to bring them in.
+            As an aspiring technologist, this was humbling. <em>Unmasking AI</em> taught me that fairness isn’t a checkbox - it’s a responsibility. Inclusion has to be intentional. I don’t want to build systems that only understand people who sound like me. I want to build systems that listen to everyone. This project - and Buolamwini’s work - taught me that ethical AI begins not with code but with care. With listening. With seeing who’s left out and choosing to bring them in.
           </p>
 
 
 
 
-          <h3>Dui's Reflection</h3>
+          <h3>Dui's</h3>
           <p>
-            Reflecting on Joy Buolamwini’s Unmasking AI and the work we did in this project, I was struck by how closely theory and practice can intersect. While training the model, I initially focused on ensuring good technical performance—clear labeling, consistent audio, and a balanced dataset. But as I observed the model's accuracy fluctuate depending on who was speaking, I realized that something deeper was happening. This wasn’t just about “data quality”—it was about representation and power.
+            Reflecting on Joy Buolamwini’s <em>Unmasking AI</em> and our project work, I was struck by how theory and practice can deeply intersect. At first, I focused on technical performance—labeling, clean audio, balanced data. But as I saw the model’s accuracy shift depending on the speaker, I realized this was about more than data quality—it was about representation and power.
           </p>
           <p>
-            Buolamwini's term “coded gaze” became especially meaningful. As she describes, the gaze of the algorithm is shaped by the perspectives and priorities of its creators. I had assumed my bilingualism (speaking both Mandarin and English) would help me be more inclusive. But I still noticed the model recognized my voice more accurately than others, which made me pause. I began to wonder: Was I unconsciously training the model to understand people like me, while sidelining others?
+            Though I’m bilingual in Mandarin and English, the model still recognized my voice best. That made me wonder if I was unintentionally designing it to understand people like me, while excluding others.
           </p>
           <p>
-            Reading Unmasking AI helped me recognize that exclusion in tech isn’t always loud or intentional. It’s often silent, embedded in choices we don't think twice about—like whose voice gets recorded more times or which sample we consider “good enough.” That’s why Buolamwini’s argument that bias is built into the design process hit home. It made me reconsider what it means to be a responsible developer or designer. It’s not just about “making things work”—it’s about who they work for, and who they fail.
+            <em>Unmasking AI</em> helped me see that bias often hides in subtle design choices—whose voices are recorded more, which samples are deemed “good.” It challenged me to think beyond technical success and consider who my systems serve—and who they ignore.
           </p>
           <p>
-            Reading <em>Unmasking AI</em> made me critically evaluate what kinds of "voices" get heard and respected in technological systems. It became clear that this wasn’t just a technical issue—it was personal, cultural, and systemic. This experience encouraged me to think beyond accuracy and instead ask: who gets to participate in this system, and who gets left out?
+            This experience shifted my thinking. Fairness in AI isn’t just technical—it’s cultural, personal, and systemic. It pushed me to ask deeper questions: who gets to be heard, and who gets left out?
           </p>
+
         </div>
       </section>
 
