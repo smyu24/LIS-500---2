@@ -118,6 +118,15 @@ img {
   background-color: #2980b9;
 }
 
+canvas {
+  display: block;
+  margin: 40px auto;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
+
+
 /* Footer */
 .footer {
   text-align: center;
