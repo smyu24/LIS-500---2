@@ -25,7 +25,7 @@
 
       <section class="introduction">
         <h2>Introduction</h2>
-        <p>This project explores how machine learning algorithms classify voice-based identity attributes—specifically gender and ethnicity—from short audio samples using a Teachable Machine model. Inspired by Joy Buolamwini’s <em>Unmasking AI</em> (2023), we investigated what she calls the <strong>coded gaze</strong>: the way AI systems reflect the biases of their creators rather than objective truths (p. 18). Just as Buolamwini discovered facial recognition tools failed to see her unless she wore a white mask, we found our voice model also excluded users with certain accents or voice tones. Our project asks: <em>Who gets heard? Who gets erased?</em></p>
+        <p>This project explores how machine learning algorithms classify voice-based identity attributes—specifically gender and ethnicity—from short audio samples using a Teachable Machine model. Inspired by Joy Buolamwini’s <em>Unmasking AI</em> (2023), we investigated what she calls the <strong>coded gaze</strong>: the way AI systems reflect the biases of their creators rather than objective truths (p. 10). Just as Buolamwini discovered facial recognition tools failed to see her unless she wore a white mask, we found our voice model also excluded users with certain accents or voice tones. Our project asks: <em>Who gets heard? Who gets erased?</em></p>
         <p>We created a browser-based classifier that attempts to distinguish voice features based on sound input, while also examining the limitations and potential risks of such technologies.</p>
         <p>Our approach also draws on Ruha Benjamin’s <em>Race After Technology</em>, which argues that racism can be embedded in technical systems; <b>“Race as technology: this is an invitation to consider racism in relation to other forms of domination as not just an ideology or history, but as a set of technologies that generate patterns of social relations, and these become Black‑boxed as natural, inevitable, automatic.” (Benjamin, 2019, p. 45)</b>. This helped us contextualize the shortcomings of our classifier not just as bugs, but as consequences of deeper socio-technical patterns.</p>
         <p>This work is deeply informed by Joy Buolamwini's <em>Unmasking AI</em>, which questions the assumptions and embedded biases in AI systems, especially those that involve identity classification.</p>
@@ -46,8 +46,16 @@
       <section class="content">
         <div class="contenttext">
           <h2>Reflections on <em>Unmasking AI</em></h2>
-          <p>Buolamwini's writing was a powerful reminder that AI is not neutral. As we tested our model on diverse voice recordings, it became clear how much performance varied based on pitch, accent, and tone. This variation reflects a deeper issue: many models aren't built to serve all people equally.</p>
-          <p>Her concept of the “coded gaze” helped us critique our own model and identify its blind spots—particularly around voice gendering and ethnic representation. This project is our way of participating in a more equitable AI discourse.</p>
+          <p>
+            Buolamwini’s writing was a powerful reminder that AI is not neutral. Her writing underscores the dangers of relying on AI systems that replicate and amplify existing societal inequalities. She warns that “we entrench algorithmic injustice” (pg. 15) when flawed AI tools are assumed to be objective, even as they reinforce discrimination in critical areas like education, employment, and healthcare. This helped frame our understanding of how our classifier may reinforce dominant norms rather than challenge them.
+          </p>
+          <p>
+            As we tested our model on diverse voice recordings, it became clear how much performance varied based on pitch, accent, and tone. This variation reflects a deeper issue: many models aren't built to serve all people equally.
+          </p>
+          <p>
+            We were also influenced by Kate Crawford’s <em>Atlas of AI</em>, where she states: “Every dataset contains a worldview” (p. 135). The limited voices we used to train the classifier shaped its perception of who is ‘normal’ and who is not. That realization shifted our goals from accuracy to awareness.
+          </p>  
+        
         </div>
       </section>
 
