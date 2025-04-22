@@ -48,24 +48,48 @@
           <h2>Project Statements</h2>
           <h3>Seung Min's</h3>
           <p>
-            Working on this project was eye-opening in more ways than I expected. The project began as a fun exploration of training a voice classifier to recognize words like “hello,” “yes,” and “no.” But the deeper I got into testing, especially with non-native English speakers, the more it revealed the unsettling reality: even clear, correct speech could be consistently misunderstood by AI. And often, that misunderstanding came down to one thing - accent.
+            Working on this project was eye-opening in more ways than I expected. The project began as a fun exploration of training a voice classifier to recognize words like “hello,” “yes,” and “no.” But the deeper I got into testing, especially with non-native English speakers, the more it revealed the unsettling reality: even clear, correct speech could be consistently misunderstood by AI. And often, that misunderstanding came down to one thing – accent.
           </p>
+      
           <p>
-            The initial spark came from a TikTok trend where users had to pronounce words to guide a ball through a virtual hoop. I noticed that many Eastern creators - despite articulating the words correctly - were repeatedly failing the game. Their slight variations in tone, pitch, or rhythm led to misclassifications. At first glance, it looked like just another viral challenge. But it hinted at something deeper: a systemic pattern of exclusion. This casual frustration inspired me to take up this project, which explored the idea of how difficult of a concept accent bias rectification is and its implications.
+            The initial spark came from a TikTok trend where users had to pronounce words to guide a ball through a virtual hoop. I noticed that many Eastern creators – despite articulating the words correctly – were repeatedly failing the game. Their slight variations in tone, pitch, or rhythm led to misclassifications. At first glance, it looked like just another viral challenge. But it hinted at something deeper: a systemic pattern of exclusion. There were also parallels from Ruha Benjamin’s scenario within “White Supremacy and AI (YikYak)” and this experience, where any tool that lacks intentional diversity becomes complicit in exclusion (especially in social media platforms like TikTok). This casual frustration inspired me to take up this project, which explored the idea of how difficult of a concept accent bias rectification is and its implications.
           </p>
+      
           <p>
-            Joy Buolamwini’s <em>Unmasking AI</em> hit especially hard during this process. Her concept of the “coded gaze” - the idea that AI reflects the worldview of its creators - was no longer just theoretical. I saw it in action. Our model, trained on a subset of accents, occasionally failed to recognize the voices of my Korean, Mandarin, and Spanish speaking friends. Despite speaking the same words, their intonation or pitch would throw off the classifier. It didn’t “hear” them. And in that failure, it rendered them invisible.
+            Starting off, I designed a browser-based Teachable Machine experiment that would classify short audio clips into simple categories. The technical challenge felt straightforward: collect samples, train a model, and measure accuracy. But as I delved into the task, I confronted the lessons of Joy Buolamwini’s <em>Unmasking AI</em>. Buolamwini’s concept of the “coded gaze” – the idea that AI reflects the worldview and blind spots of its creators – was no longer abstract theory. It manifested in every misclassification when my Korean, Mandarin, and Spanish-speaking friends spoke the same words my training set recognized flawlessly. The classifier simply didn’t “hear” them, rendering them effectively invisible.
           </p>
+      
           <p>
-            The image Buolamwini shares - having to wear a white mask to be recognized by a facial recognition system - stuck with me as I watched my friends repeat simple words, again and again, only to be misclassified or ignored. There was no "accent mask" they could put on to make the model listen. That failure wasn’t a fluke; it was a reflection of the model’s blind spots - and mine. I realized that AI doesn’t just exclude by accident. It excludes by design when diversity isn’t built into the training process.
+            Buolamwini’s writing was a powerful reminder that AI is not neutral. Her writing underscores the dangers of relying on AI systems that replicate and amplify existing societal inequalities. She warns that “we entrench algorithmic injustice” (pg. 15) when flawed AI tools are assumed to be objective, even as they reinforce discrimination in critical areas like education, employment, and healthcare. This helped frame my understanding of how our classifier may reinforce dominant norms rather than challenge them.
           </p>
+      
           <p>
-            This experience forced me to confront how easily bias sneaks into our systems - not because of malicious intent but because of the assumptions we don’t question. I used English speakers/accents to train the classifier, thinking it was a neutral starting point. But it wasn’t. It was just one voice, with one accent, representing one version of English. Everyone else became an outlier.
+            So, as we tested our model on diverse voice recordings, it became clear how much performance varied based on pitch, accent, and tone. This variation reflects a deeper issue: many models aren't built to serve all people equally.
           </p>
+      
           <p>
-            As an aspiring technologist, this was humbling. <em>Unmasking AI</em> taught me that fairness isn’t a checkbox - it’s a responsibility. Inclusion has to be intentional. I don’t want to build systems that only understand people who sound like me. I want to build systems that listen to everyone. This project - and Buolamwini’s work - taught me that ethical AI begins not with code but with care. With listening. With seeing who’s left out and choosing to bring them in.
+            Outside of class material, I was also influenced by Kate Crawford’s <em>Atlas of AI</em>, where she states: “Every dataset contains a worldview” (p. 135). The limited voices we used to train the classifier shaped its perception of who is ‘normal’ and who is not. That realization shifted our goals from accuracy to awareness.
           </p>
-
+      
+          <p>
+            In these realizations, I was reminded of Rebecca Booten’s critique of the #AllLivesMatter movement. Just as #AllLivesMatter can erase the specificity of Black experiences, a model trained on one accent or narrow speaker pool diminishes the nuance of global English dialects. What appears on the surface as “neutral code” carries embedded assumptions – about which voices matter and which do not. Such assumptions can also have the adverse effect of masking implicit biases that disadvantage marginalized groups. Likewise, I learned in class from Joy’s essay “#FFFFFF Diversity” how defaulting to whiteness as a neutral baseline perpetuates systemic bias. In choosing training data, I unwittingly prioritized one version of English – and in doing so, I repeated the pattern of centering the dominant culture.
+          </p>
+      
+          <p>
+            Practically speaking, embracing the technological complexity of risking addressing one axis of bias while perpetuating another, led me to expand my dataset: I collected voices from three continents, across languages and gender presentations. I incorporated ambient noise samples to counteract privileged recording conditions. Each design choice, from microphone filtering to data augmentation, became an opportunity to question my defaults. What does “clean audio” really privilege? Which voices am I centering by choosing certain thresholds?
+          </p>
+      
+          <p>
+            To further ground the project in community perspectives, I organized three virtual listening sessions with friends and classmates from diverse linguistic backgrounds. Participants read prompts in English and shared feedback on the model’s responsiveness, and I responded by tweaking the Overlap Factor, Probability Threshold, and training epoch count. Rather than relying solely on overall accuracy, I began reporting per-accent precision and recall, making hidden disparities visible. This methodological shift was informed by Ellen Pao’s insistence on transparency and accountability. By publishing detailed bias reports alongside model demos, I aim to foster an ongoing dialogue – inviting critique, collaboration, and co-design. Ethical AI, after all, is not a final destination but a process of continual reflection and iteration.
+          </p>
+      
+          <p>
+            Ultimately, this project taught me that ethical AI begins not with code, but with care. Care involves, ironically enough, listening; an openness to voices that challenge our assumptions. Care means ongoing collaboration with diverse communities, not one-off user tests. Our Audio Identity Classifier is a small, browser-based experiment, but its lessons are far-reaching. It exposed biases that technical metrics alone can’t capture. It made me realize that fairness is a responsibility woven into every stage of design and it requires constant confrontation of institutional biases. And it confirmed what Ellen Pao and Ruha Benjamin urge: technology must be designed by, and for, the full spectrum of humanity.
+          </p>
+      
+          <p>
+            Moving forward, I commit to treating diversity not as an afterthought, but as foundational. I will advocate for intersectional datasets, transparent reporting of bias metrics, and a community‑driven model evaluation. Margaret Hempel teaches us in <em>Founding Mothers of Silicon Valley</em> that inclusion starts with whose stories get told, and for too long, narrative control in technology has belonged to a narrow demographic. By documenting my missteps of starting by choosing monolithic training sets, underestimating accent variation, and failing to solicit diverse feedback, I aim to contribute to a more inclusive discourse. The purpose of this project was never about achieving technical performance; it’s about honoring the multiplicity of human voices and experiences.
+          </p>
 
 
 
