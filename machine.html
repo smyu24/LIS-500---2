@@ -87,13 +87,27 @@
 
 
     <section class="introduction">
-      <h2>Try It Out!</h2>
-      <p>
-        Research by Prof. Weinberger states the following to be a way to reveal accents: <u>Please call Stella.  Ask her to bring these things with her from the store:  Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob.  We also need a small plastic snake and a big toy frog for the kids.  She can scoop these things into three red bags, and we will go meet her Wednesday at the train station. 
-        Our classifier will attempt to recognize it instantly.</u>
-      </p>
-      <script src="model.js"></script>
-    </section>
+  <h2>Try It Out!</h2>
+  <p>
+    Research by Prof. Weinberger states the following to be a way to reveal accents: 
+    <u>
+      Please call Stella. Ask her to bring these things with her from the store: Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. 
+      We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.
+    </u>
+    Our classifier will attempt to recognize it instantly.
+  </p>
+
+  <!-- Classifier Container -->
+  <div class="classifier-container">
+    <canvas></canvas> <!-- Your p5.js canvas will go here -->
+
+    <div id="result-output">Listening...</div>
+    
+    <button id="start-btn">Start Classifier</button>
+  </div>
+
+  <script src="model.js"></script>
+</section>
   </main>
 
 </body>
