@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Metadata and title for the page -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LIS500 Project 3 - Audio-Based Identity Classifier</title>
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,6 +17,7 @@
       <h1>Audio Identity Classifier</h1>
       <nav>
         <ul class="menu">
+          <!-- Navigation links -->
           <li><a href="index.html">Home</a></li>
           <li><a href="machine.html">Our Machine</a></li>
         </ul>
@@ -23,29 +27,35 @@
     <!-- Main Content -->
     <main class="main">
 
+      <!-- Introduction section describing the project purpose and inspiration -->
       <section class="introduction">
         <h2>Introduction</h2>
+        <!-- Overview of the project's goals and ethical considerations -->
         <p>This project explores how machine learning algorithms classify voice-based identity attributes—specifically gender and ethnicity—from short audio samples using a Teachable Machine model. Inspired by Joy Buolamwini’s <em>Unmasking AI</em> (2023), we investigated what she calls the <strong>coded gaze</strong>: the way AI systems reflect the biases of their creators rather than objective truths (p. 10). Just as Buolamwini discovered facial recognition tools failed to see her unless she wore a white mask, we found our voice model also excluded users with certain accents or voice tones. Our project asks: <em>Who gets heard? Who gets erased?</em></p>
         <p>We created a browser-based classifier that attempts to distinguish voice features based on sound input, while also examining the limitations and potential risks of such technologies.</p>
         <p>Our approach also draws on Ruha Benjamin’s <em>Race After Technology</em>, which argues that racism can be embedded in technical systems; <b>“Race as technology: this is an invitation to consider racism in relation to other forms of domination as not just an ideology or history, but as a set of technologies that generate patterns of social relations, and these become Black‑boxed as natural, inevitable, automatic.” (Benjamin, 2019, p. 45)</b>. This helped us contextualize the shortcomings of our classifier not just as bugs, but as consequences of deeper socio-technical patterns.</p>
         <p>This work is deeply informed by Joy Buolamwini's <em>Unmasking AI</em>, which questions the assumptions and embedded biases in AI systems, especially those that involve identity classification.</p>
 
+        <!-- Embedded YouTube video demoing projectw -->
         <div style="text-align: center; margin: 20px 0;">
-  <iframe width="720" height="480" 
-          src="https://www.youtube.com/embed/l0mILNVQwSM?si=yf1CrTbDUVUNgDlx" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-  </iframe>
-</div>
+          <iframe width="720" height="480" 
+                  src="https://www.youtube.com/embed/l0mILNVQwSM?si=yf1CrTbDUVUNgDlx" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+          </iframe>
+        </div>
       </section>
 
+      <!-- Visual representation of the model -->
       <img src="images/TeachableMachine.png" alt="Model Diagram" height="400" width="600" />
 
+      <!-- Section with project statements from contributors -->
       <section class="content">
         <div class="contenttext">
           <h2>Project Statements</h2>
+          <!-- Seung Min's reflection on technical and ethical challenges -->
           <h3>Seung Min's</h3>
           <p>
             Working on this project was eye-opening in more ways than I expected. The project began as a fun exploration of training a voice classifier to recognize words like “hello,” “yes,” and “no.” But the deeper I got into testing, especially with non-native English speakers, the more it revealed the unsettling reality: even clear, correct speech could be consistently misunderstood by AI. And often, that misunderstanding came down to one thing – accent.
@@ -92,7 +102,7 @@
           </p>
 
 
-
+          <!-- Dui's reflection on technical and ethical challenges -->
           <h3>Dui's</h3>
           <p>
             Reflecting on Joy Buolamwini’s <em>Unmasking AI</em> and our project work, I was struck by how theory and practice can deeply intersect. At first, I focused on technical performance—labeling, clean audio, balanced data. But as I saw the model’s accuracy shift depending on the speaker, I realized this was about more than data quality—it was about representation and power.
@@ -110,6 +120,8 @@
         </div>
       </section>
 
+
+      <!-- Section discussing ethical implications of voice classification -->
       <section class="content">
         <div class="contenttext">
           <h2>Ethical Implications</h2>
@@ -118,7 +130,8 @@
           <p>As Buolamwini emphasizes, “We cannot have racial justice if we adopt technical tools... that only further incarcerate communities of color” (Buolamwini, p. 33). Our classifier is a small, browser-based experiment, but the design choices we make—even about what accents to include—reflect assumptions that scale. This isn’t just about voice—it’s about whose identity gets reduced, misread, or denied by technology.</p>
         </div>
       </section>
-
+      
+      <!-- Section reflecting on overall project lessons -->
       <section class="content">
         <div class="contenttext">
           <h2>What Was Learned</h2>
@@ -127,6 +140,7 @@
           </div>
       </section>
 
+      <!-- Connection to previous class project on implicit bias -->
       <section class="content">
         <div class="contenttext">
           <h2>Connecting to class Project 2 (Implicit Bias Resource Guide)</h2>
@@ -137,6 +151,7 @@
         </div>
       </section>
 
+      <!-- Buttons linking to external resources for further learning -->
       <div class="button">
         <a href="https://smyu24.github.io/LIS-500/resources.html" target="_blank">Learn More about Implicit Bias in Project Two IBT Guide</a>
       </div>
@@ -144,29 +159,28 @@
         <a href="https://thecodingtrain.com/tracks/teachable-machine/teachable-machine/3-sound-classification" target="_blank">Learn More About Teachable Machines</a>
       </div>
 
+      <!-- Book cover images with links to key texts referenced in the project -->
       <div style="text-align: center; margin: 20px 0;">
-  <a href="https://ebookcentral.proquest.com/lib/wisc/detail.action?docID=30724349" target="_blank">
-    <img src="https://ca-times.brightspotcdn.com/dims4/default/eb177f2/2147483647/strip/true/crop/2248x1622+0+0/resize/1200x866!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F37%2Fe2%2Fe66aac3f4ad88daabaf69ed9c15a%2Funmaskinai.jpg" 
-         alt="Unmasking AI Book Cover" 
-         width="200" 
-         style="display: block; margin: 0 auto;" />
-  </a>
-  <p style="font-size: 0.9em; margin-top: 8px;">
-    <em>Cover of <strong>Unmasking AI</strong> by Joy Buolamwini — click to access via UW-Madison library</em>
-  </p>
+        <a href="https://ebookcentral.proquest.com/lib/wisc/detail.action?docID=30724349" target="_blank">
+          <img src="https://ca-times.brightspotcdn.com/dims4/default/eb177f2/2147483647/strip/true/crop/2248x1622+0+0/resize/1200x866!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F37%2Fe2%2Fe66aac3f4ad88daabaf69ed9c15a%2Funmaskinai.jpg" 
+               alt="Unmasking AI Book Cover" 
+               width="200" 
+               style="display: block; margin: 0 auto;" />
+        </a>
+        <p style="font-size: 0.9em; margin-top: 8px;">
+          <em>Cover of <strong>Unmasking AI</strong> by Joy Buolamwini — click to access via UW-Madison library</em>
+        </p>
 
-  <a href="https://mycours.es/ems2/files/2020/09/Ruha-Benjamin-%E2%80%93-Race-After-Technology-Introduction.pdf" target="_blank">
-    <img src="https://humanities.princeton.edu/wp-content/uploads/2020/05/ruha-june2019-1.png" 
-         alt="Race After Technology Book Cover" 
-         width="200" 
-         style="display: block; margin: 0 auto;" />
-  </a>
-  <p style="font-size: 0.9em; margin-top: 8px;">
-    <em>Cover of <strong>Race After Technology</strong> by Ruha Benjamin — click to access in PDF form</em>
-  </p>
-</div>
-
-
+        <a href="https://mycours.es/ems2/files/2020/09/Ruha-Benjamin-%E2%80%93-Race-After-Technology-Introduction.pdf" target="_blank">
+          <img src="https://humanities.princeton.edu/wp-content/uploads/2020/05/ruha-june2019-1.png" 
+               alt="Race After Technology Book Cover" 
+               width="200" 
+               style="display: block; margin: 0 auto;" />
+        </a>
+        <p style="font-size: 0.9em; margin-top: 8px;">
+          <em>Cover of <strong>Race After Technology</strong> by Ruha Benjamin — click to access in PDF form</em>
+        </p>
+      </div>
     </main>
 
     <!-- Footer -->
