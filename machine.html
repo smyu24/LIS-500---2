@@ -67,6 +67,27 @@
 </section>
 
 <section class="content">
+  <h2>Does the Model Work?</h2>
+  <p>
+    While our model performs well under controlled conditions, several factors can affect how reliably it works across different devices and environments. Performance may vary depending on:
+  </p>
+  <ul class="contenttext">
+    <li><strong>Browser compatibility:</strong> The classifier is optimized for modern browsers like Google Chrome. Older or unsupported browsers may not grant microphone access properly or may lag during real-time inference.</li>
+    <li><strong>Microphone quality:</strong> Built-in laptop mics or mobile microphones might not capture audio as clearly as external ones, which can lead to misclassifications or non-detection.</li>
+    <li><strong>Device performance:</strong> Slower devices may delay model loading or cause glitches in prediction rendering due to limited processing power.</li>
+    <li><strong>Network latency:</strong> Because the model is hosted via ml5.js and Teachable Machine, a strong internet connection is necessary to load it efficiently on first use.</li>
+  </ul>
+  <br>
+  <p>
+    <strong>False Positives:</strong> While false negatives (i.e., non-detection) are a concern, our model also suffers from false positives—where it assigns incorrect labels. For instance, soft-spoken male voices were occasionally labeled as female, and some tonal overlaps between accents (such as Indian and Middle Eastern) led to misclassification. These errors highlight the model's tendency to rely on pitch and intonation more than the linguistic content itself.
+  </p>
+  <p>
+    <strong>Model Fragility:</strong> Since the classifier updates in real-time every few seconds, it can flicker between categories if there's slight variation in how someone speaks—or due to background noise. This makes the model feel unstable at times and suggests a need for either confidence thresholds or smoothing of predictions to reduce confusion for users.
+  </p>
+</section>
+
+
+<section class="content">
   <h2>Next Steps</h2>
   <ul class="contenttext">
     <li>Expand the dataset with a broader range of voices, accents, and pitches.</li>
