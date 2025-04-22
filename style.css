@@ -1,19 +1,22 @@
 /* Reset and Base Styles */
+/* Apply box-sizing to all elements and remove default margin and padding */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Base body styling for font, layout, and background */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5;
   color: #333;
-  padding-top: 80px; /* To prevent content hiding under fixed header */
+  padding-top: 80px; /* Prevent content from being hidden under the fixed header */
 }
 
 /* Header and Navbar */
+/* Header container styling */
 .header {
   background-color: #2c3e50;
   color: white;
@@ -23,39 +26,45 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999; /* Ensures header stays on top of other elements */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
+/* Header title styling */
 .header h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
+/* Spacing for nav under title */
 nav {
   margin-top: 10px;
 }
 
+/* Menu list styling */
 .menu {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; /* Space between menu items */
 }
 
+/* Menu link styling */
 .menu li a {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
+/* Menu link hover effect */
 .menu li a:hover {
-  color: #3498db;
+  color: #3498db; /* Highlight color on hover */
 }
 
 /* Main Layout */
+/* Container for main content */
 .main {
   max-width: 900px;
   margin: 0 auto;
@@ -63,14 +72,16 @@ nav {
 }
 
 /* Section Styles */
+/* Common styles for intro and content sections */
 .introduction, .content {
   margin-bottom: 40px;
   background-color: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Light shadow for card-like effect */
 }
 
+/* Section heading styling */
 .introduction h2,
 .content h2 {
   font-size: 1.5rem;
@@ -78,17 +89,20 @@ nav {
   color: #2c3e50;
 }
 
+/* Section paragraph styling */
 .introduction p,
 .content p {
   font-size: 1.05rem;
   margin-bottom: 15px;
 }
 
+/* Extra spacing for text within content section */
 .contenttext {
   margin-top: 20px;
 }
 
 /* Images */
+/* Ensure responsive, centered, and rounded images */
 img {
   display: block;
   max-width: 100%;
@@ -98,11 +112,13 @@ img {
 }
 
 /* Buttons */
+/* Button wrapper for centering */
 .button {
   text-align: center;
   margin: 40px 0;
 }
 
+/* Anchor button styling */
 .button a {
   background-color: #3498db;
   color: white;
@@ -114,10 +130,13 @@ img {
   transition: background-color 0.3s ease;
 }
 
+/* Button hover state */
 .button a:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; /* Darker shade on hover */
 }
 
+/* Canvas Styling */
+/* Center and size canvas appropriately */
 canvas {
   display: block;
   margin: 40px auto;
@@ -126,8 +145,8 @@ canvas {
   height: auto;
 }
 
-
 /* Footer */
+/* Footer styling for layout and appearance */
 .footer {
   text-align: center;
   padding: 20px;
@@ -138,18 +157,19 @@ canvas {
 }
 
 /* Responsive Design */
+/* Adjust layout and text for smaller screens */
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Reduced gap for smaller view */
   }
 
   .header h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Smaller title on small screens */
   }
 
   .button a {
     width: 80%;
-    display: inline-block;
+    display: inline-block; /* Make button more touch-friendly */
   }
 }
